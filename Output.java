@@ -10,8 +10,8 @@ public class Output {
         System.out.println("경로 : " + info.getPath(url));
         System.out.println("종류 : " + info.getSort(address));
         System.out.println("용량 : " + info.getSize(address));
-        System.out.println("대기 시간 : " + info.getWaitingTime(url));
-        System.out.println("다운로드 시간  : " + info.getDownloadTime(url) + "\n");
+        System.out.println("대기 시간 : " + info.getWaitingTime());
+        System.out.println("다운로드 시간  : " + info.getDownloadTime() + "\n");
     }
 
     void printResult() {

@@ -5,8 +5,6 @@ import java.net.URL;
 import java.net.URLConnection;
 
 public class Information {
-
-
     String getDomain(URL url) {
         return url.getHost();
     }
@@ -33,13 +31,13 @@ public class Information {
         return size + "KB";
     }
 
-    String getWaitingTime(URL url){
-        return Http.responseTime - Http.requestTime + "ms";
+    String getWaitingTime() {
+        return Http.waitingTime + "ms";
     }
 
 
-    String getDownloadTime(URL url) {
-        return Http.downloadedTime - Http.responseTime + "ms";
+    String getDownloadTime() {
+        return Http.downloadedTime + "ms";
     }
 
 }
